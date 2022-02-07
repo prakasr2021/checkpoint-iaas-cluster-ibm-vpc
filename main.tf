@@ -230,7 +230,7 @@ resource "ibm_is_lb" "nlb" {
 }
 
 resource "ibm_is_lb_listener" "nlbHttpListener1" {
-  lb           = ibm_is_lb.nlb.id
+  lb           = ibm_is_lb.nlb_pool.id
   protocol     = "tcp"
 }
 
